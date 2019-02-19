@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import { Carousel }from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import CarouselImage1 from './CarouselImages/1.jpg';
 import CarouselImage2 from './CarouselImages/2.jpg';
 import CarouselImage3 from './CarouselImages/3.jpg';
@@ -11,14 +11,13 @@ class ImageCarousel extends Component {
   render() {  
     const itemStyle = {
       height: "80vh",
-      "object-fit": "cover",
+      objectFit: "cover",
       overflow: "hidden"
     }
 
 
     return (
-      <section>
-      <Carousel id="Gallery" className="mh-50">
+      <Carousel indicators="false" className="mh-50">
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -27,8 +26,8 @@ class ImageCarousel extends Component {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Gold Valet</h3>
+            <p>Stunning cleanup of an out-of-love Mazda m3</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -80,7 +79,6 @@ class ImageCarousel extends Component {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      </section>
     );
   }
 }

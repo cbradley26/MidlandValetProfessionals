@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MVPimage from './mvpimage.png';
 import './Header.css';
-import { Navbar }from 'react-bootstrap';
+import { Navbar, Badge }from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 
 
@@ -9,7 +9,7 @@ class Header extends Component {
   render() {
     return (
         <section>
-        <Navbar bg="light" expand="lg">
+        <Navbar fixed="top" bg="light" expand="lg">
         <Navbar.Brand href="#home">     
         <img
             src={MVPimage}
@@ -25,7 +25,7 @@ class Header extends Component {
             <Nav.Link href="#Gallery">Gallery</Nav.Link>
             <Nav.Link href="#Pricing">Pricing</Nav.Link>
             <Nav.Link href="#Testimonies">Testimonies</Nav.Link>
-            <Nav.Link href="#Book">Book Now!</Nav.Link>
+            <Nav.Link href="#Book"> <Badge variant="secondary"> Book Now!</Badge></Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
