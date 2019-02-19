@@ -7,7 +7,7 @@ class PriceCard extends Component {
         var perks = () => {
             let perksList = [];
 
-            for (let i = 0; i < this.props.perk.length - 1; i++) {
+            for (let i = 0; i < this.props.perk.length; i++) {
                 perksList.push(<Card.Body key={i}>{this.props.perk[i]}</Card.Body>);
             }
             return perksList;
