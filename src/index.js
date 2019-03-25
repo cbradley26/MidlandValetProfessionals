@@ -12,11 +12,13 @@ import * as serviceWorker from './serviceWorker';
 import ImageCarousel from './ImageCarousel';
 import Testimonies from './Testimonies';
 import Pricing from './Pricing';
+import ContactForm from './ContactForm';
 
 ReactDOM.render(<Header/>, document.getElementById('header'));
 ReactDOM.render(<ImageCarousel/>, document.getElementById('Carousel'));
 ReactDOM.render(<Pricing/>, document.getElementById('Pricing'));
 ReactDOM.render(<Testimonies/>, document.getElementById('Testimonies'));
+ReactDOM.render(<ContactForm/>, document.getElementById('Book'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

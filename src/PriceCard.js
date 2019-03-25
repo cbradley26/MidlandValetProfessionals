@@ -16,7 +16,7 @@ class PriceCard extends Component {
 
         return (
             <div className="col-lg-4 mb-4">
-                <Card>
+                <Card className="pricingCard">
                     <Card.Title className="mx-auto mt-3 ">{this.props.package}</Card.Title>
 
                     <h1 className="mx-auto text-center text-secondary">{this.props.price}</h1>
